@@ -1,0 +1,144 @@
+.about-heading {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 60px;
+}
+
+.about-heading h2 {
+  font-size: 2.3rem;
+  margin-top: 6px;
+}
+
+.about-intro {
+  margin-top: 18px;
+  color: var(--ink-soft);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.therapist-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.therapist-card {
+  background: var(--sage-light);
+  border-radius: var(--radius-lg);
+  padding: 44px;
+  display: grid;
+  grid-template-columns: 260px 1fr;
+  gap: 44px;
+  align-items: start;
+}
+
+.therapist-card.reverse {
+  background: var(--cream-dark);
+}
+
+.therapist-card.reverse .therapist-photo {
+  order: 2;
+}
+
+.therapist-photo {
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-md);
+  background: linear-gradient(150deg, var(--mustard), var(--sage));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.therapist-photo span {
+  font-family: var(--font-display);
+  font-size: 5rem;
+  color: var(--white);
+}
+
+.therapist-details h3 {
+  font-size: 1.7rem;
+}
+
+.therapist-title {
+  margin-top: 4px;
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--sage-dark);
+}
+
+.therapist-tagline {
+  margin-top: 14px;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-size: 1.2rem;
+  color: var(--ink);
+}
+
+.therapist-bio {
+  margin-top: 16px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.therapist-block {
+  margin-top: 22px;
+}
+
+.therapist-block h4 {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+.therapist-block ul {
+  margin: 0;
+  padding-left: 20px;
+  color: var(--ink-soft);
+}
+
+.therapist-block li {
+  margin-bottom: 4px;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tag {
+  background: var(--white);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ink);
+}
+
+.therapist-details .placeholder-note {
+  display: block;
+  margin-top: 18px;
+}
+
+@media (max-width: 760px) {
+  .therapist-card,
+  .therapist-card.reverse {
+    grid-template-columns: 1fr;
+    padding: 28px;
+  }
+
+  .therapist-card.reverse .therapist-photo {
+    order: 0;
+  }
+
+  .therapist-photo {
+    max-width: 180px;
+    margin: 0 auto;
+  }
+}

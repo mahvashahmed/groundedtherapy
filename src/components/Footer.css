@@ -1,0 +1,43 @@
+.footer {
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.footer-inner {
+  text-align: center;
+  padding-top: 56px;
+  padding-bottom: 40px;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.footer .logo-text {
+  color: var(--white);
+}
+
+.footer .logo-text em {
+  color: var(--mustard);
+  font-style: italic;
+}
+
+.footer-names {
+  font-weight: 600;
+  color: var(--white);
+}
+
+.footer-contact {
+  margin-top: 8px;
+  color: var(--cream-dark);
+  font-size: 0.9rem;
+}
+
+.footer-copy {
+  margin-top: 24px;
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}

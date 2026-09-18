@@ -1,0 +1,96 @@
+.approach {
+  display: grid;
+  grid-template-columns: 1fr 1.3fr 1fr;
+  gap: 24px;
+  align-items: stretch;
+}
+
+.approach-panel {
+  border-radius: var(--radius-lg);
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.approach-panel-sage {
+  background: var(--sage-light);
+}
+
+.approach-panel-mustard {
+  background: var(--mustard);
+  color: var(--ink);
+}
+
+.approach-icon {
+  width: 56px;
+  height: 56px;
+}
+
+.approach-icon-wide {
+  width: 84px;
+  height: auto;
+}
+
+.approach-panel h3 {
+  font-size: 1.3rem;
+}
+
+.approach-panel p {
+  color: var(--ink-soft);
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.approach-panel-mustard p {
+  color: var(--ink);
+  opacity: 0.85;
+}
+
+.approach-steps {
+  padding: 12px 8px;
+}
+
+.approach-steps h2 {
+  font-size: 2rem;
+  margin-top: 6px;
+  margin-bottom: 32px;
+}
+
+.approach-steps ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.approach-steps li {
+  display: flex;
+  gap: 18px;
+}
+
+.step-index {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  color: var(--mustard-dark);
+  flex-shrink: 0;
+}
+
+.approach-steps h4 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+.approach-steps p {
+  color: var(--ink-soft);
+  line-height: 1.6;
+}
+
+@media (max-width: 940px) {
+  .approach {
+    grid-template-columns: 1fr;
+  }
+}
