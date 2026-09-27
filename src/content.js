@@ -6,16 +6,16 @@ export const therapists = [
   {
     id: 'khushhal',
     name: 'Khushhal Ahmed',
-    title: 'PLACEHOLDER — e.g. Licensed Clinical Psychologist',
+    title: 'Psychotherapist',
     photoInitial: 'K',
-    tagline: 'PLACEHOLDER — one line describing how Khushhal works with clients.',
-    bio: 'PLACEHOLDER bio. Write 2-4 sentences about who Khushhal is, how they came to therapy work, and what clients can expect from sessions with them.',
-    qualifications: [
-      'PLACEHOLDER — degree, university, year',
-      'PLACEHOLDER — license / registration number',
-      'PLACEHOLDER — certification or training',
-    ],
-    expertise: ['Anxiety', 'Relationships', 'Life Transitions', 'Self-Esteem'],
+    tagline:
+      'I offer a gentle, unhurried space where your faith, culture, and story are part of the healing, not set aside.',
+    bio: '',
+    qualifications: ['PhD Candidate (Department of Psychology, AMU)', 'MA (Clinical Psychology, AMU)'],
+    expertise: ['Trauma', 'Grief', 'Faith-Rooted & Culturally-Sensitive Care', 'Youth & Young Adults', 'Relationships & Couples'],
+    approaches: ['Internal Family Systems (IFS)', 'Narrative Therapy'],
+    languages: ['Urdu', 'Hindi', 'English'],
+    placeholder: false,
   },
   {
     id: 'mahvash',
@@ -30,67 +30,68 @@ export const therapists = [
       'PLACEHOLDER — certification or training',
     ],
     expertise: ['Stress & Burnout', 'Grief', 'Trauma-Informed Care', 'Students & Young Adults'],
+    approaches: ['PLACEHOLDER — e.g. modality one', 'PLACEHOLDER — modality two'],
+    languages: ['PLACEHOLDER — language'],
+    placeholder: true,
   },
 ];
 
+export const therapyStyle = {
+  shared:
+    'We share a warm, collaborative, trauma-informed way of working, and each of us brings our own approach to it.',
+  khushhal:
+    "Khushhal draws on Internal Family Systems (IFS) and Narrative Therapy. In practice, that means getting to know the different parts of you, including the ones in pain or on guard, with curiosity rather than judgement, and gently loosening the grip of the stories that hardship writes about us. His work is trauma-informed and spiritually grounded: your faith and culture aren't set aside; they're part of how you heal.",
+  mahvash: '',
+};
+
 export const whyTherapy = [
   {
-    title: 'A space that is only yours',
-    body: 'PLACEHOLDER — no judgement, no interruptions, just an hour that belongs entirely to you.',
+    title: 'An unhurried space',
+    body: "Time that is fully yours: private, without rush, room to say what's hard to say.",
   },
   {
-    title: 'Tools that actually help',
-    body: 'PLACEHOLDER — practical, evidence-informed approaches you can use long after the session ends.',
+    title: 'Sense, and a way forward',
+    body: "We help you understand what's happening, and find ways through that hold up outside the room.",
   },
   {
-    title: 'Someone in your corner',
-    body: 'PLACEHOLDER — a steady, non-judgemental presence while you work through what feels hard.',
+    title: 'Alongside you',
+    body: 'No formulas, no fixing. We stay beside you through the hard parts and the small wins alike.',
   },
   {
-    title: 'Progress at your pace',
-    body: 'PLACEHOLDER — therapy that adapts to where you are, not a one-size-fits-all program.',
+    title: 'Shaped around you',
+    body: 'Therapy that moves at your pace and respects your values, your culture, and what matters most to you.',
   },
+];
+
+export const helpTopics = [
+  'Anxiety',
+  'Stress & Burnout',
+  'Grief & Loss',
+  'Trauma',
+  'Relationships & Couples',
+  'Life Transitions',
+  'Youth & Young Adults',
+  'Self-Esteem',
 ];
 
 export const approachSteps = [
   {
     title: 'Reach out',
-    body: 'PLACEHOLDER — send a message and tell us a little about what brings you to therapy.',
+    body: "Send a short message telling us a little about what's bringing you to therapy.",
   },
   {
-    title: 'First conversation',
-    body: 'PLACEHOLDER — a free, no-pressure intro call to see if we\'re a good fit for each other.',
+    title: 'A free first call',
+    body: "A relaxed, no-pressure intro call to see if we're the right fit for each other.",
   },
   {
     title: 'Begin sessions',
-    body: 'PLACEHOLDER — regular sessions, in person or online, built around your goals and pace.',
-  },
-];
-
-export const pricing = [
-  {
-    name: 'Individual Session',
-    price: 'PLACEHOLDER — ₹0,000',
-    duration: '50 minutes',
-    description: 'PLACEHOLDER — one-on-one session with either therapist.',
-  },
-  {
-    name: 'Couples Session',
-    price: 'PLACEHOLDER — ₹0,000',
-    duration: '60 minutes',
-    description: 'PLACEHOLDER — joint session for couples working through things together.',
-  },
-  {
-    name: 'Package of 4',
-    price: 'PLACEHOLDER — ₹0,000',
-    duration: '4 x 50 minutes',
-    description: 'PLACEHOLDER — a small discount for committing to a monthly rhythm.',
+    body: 'Regular sessions, online, built around your goals and your pace.',
   },
 ];
 
 export const contact = {
-  email: 'PLACEHOLDER — hello@groundedtherapy.com',
+  email: 'PLACEHOLDER — hello@betweenthesessions.com',
   phone: 'PLACEHOLDER — +91 00000 00000',
   location: 'PLACEHOLDER — City, Country / Online worldwide',
-  instagram: 'PLACEHOLDER — @groundedtherapy',
+  instagram: 'https://www.instagram.com/betweenthesessions',
 };

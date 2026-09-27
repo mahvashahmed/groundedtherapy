@@ -2,10 +2,9 @@ import { useState } from 'react';
 import './Header.css';
 
 const links = [
-  { href: '#about', label: 'About' },
+  { href: '#/therapists', label: 'Meet the Therapists' },
   { href: '#why-therapy', label: 'Why Therapy' },
   { href: '#approach', label: 'How We Work' },
-  { href: '#pricing', label: 'Pricing' },
   { href: '#contact', label: 'Contact' },
 ];
 
@@ -16,10 +15,7 @@ export default function Header() {
     <header className="header">
       <div className="header-inner">
         <a href="#top" className="logo" onClick={() => setOpen(false)}>
-          <span className="logo-mark" aria-hidden="true" />
-          <span className="logo-text">
-            Grounded <em>Therapy</em>
-          </span>
+          <img className="logo-image" src="/logo.png" alt="Between the Sessions" />
         </a>
 
         <nav className={`nav ${open ? 'nav-open' : ''}`}>
@@ -28,9 +24,6 @@ export default function Header() {
               {link.label}
             </a>
           ))}
-          <a href="#contact" className="btn btn-primary nav-cta" onClick={() => setOpen(false)}>
-            Book a Consultation
-          </a>
         </nav>
 
         <button

@@ -1,15 +1,17 @@
 :root {
   /* Palette */
-  --sage: #7c8b5e;
-  --sage-dark: #5f6d45;
-  --sage-light: #dde3cd;
-  --sage-pale: #eef1e4;
-  --mustard: #d9a441;
-  --mustard-dark: #b9832a;
-  --cream: #f6f1e6;
-  --cream-dark: #efe7d5;
-  --ink: #2c2a22;
-  --ink-soft: #55523f;
+  --sage: #29a655;
+  --sage-dark: #24733f;
+  --sage-light: #d4eddd;
+  --sage-pale: #eaf6ee;
+  --ember: #d16851;
+  --ember-dark: #a75341;
+  --peach: #f29580;
+  --peach-dark: #b67060;
+  --cream: #fef7f5;
+  --cream-dark: #fdece8;
+  --ink: #400601;
+  --ink-soft: #663834;
   --white: #fffdf8;
 
   --font-display: 'Fraunces', Georgia, serif;
@@ -114,14 +116,15 @@ button {
 }
 
 .btn-primary {
-  background: var(--mustard);
+  background: var(--ember);
   color: var(--ink);
-  border-color: var(--mustard);
+  border-color: var(--ember);
 }
 
 .btn-primary:hover {
-  background: var(--mustard-dark);
-  border-color: var(--mustard-dark);
+  background: var(--ember-dark);
+  border-color: var(--ember-dark);
+  color: var(--white);
 }
 
 .btn-outline {
@@ -149,6 +152,6 @@ button {
 }
 
 ::selection {
-  background: var(--mustard);
+  background: var(--ember);
   color: var(--ink);
 }

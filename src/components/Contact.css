@@ -1,5 +1,5 @@
 .contact {
-  background: var(--sage);
+  background: var(--sage-dark);
   color: var(--white);
 }
 
@@ -50,11 +50,7 @@
   font-weight: 600;
 }
 
-.contact .btn-primary {
-  margin-top: 40px;
-}
-
 .contact-note {
-  margin-top: 16px;
+  margin-top: 32px;
   color: var(--cream);
 }

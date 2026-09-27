@@ -1,18 +1,5 @@
 // Hand-drawn style line illustrations in the spirit of the reference site.
 
-export function FlowerFaceIcon({ className }) {
-  return (
-    <svg className={className} viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="146" cy="52" r="26" fill="var(--mustard)" />
-      <path
-        d="M100 30c-6 10-18 14-28 10-4 12 2 24 14 28-10 8-12 22-4 32-10 6-14 20-6 30 4 16 20 26 36 24 18-2 30-16 32-34 1-10-2-20-10-28 8-6 12-18 6-28-4-8-14-12-22-10 4-10 0-22-10-26-2 0-6 0-8 2z"
-        fill="var(--sage)"
-      />
-      <path d="M96 70c10 6 14 18 10 30-3 10-12 18-24 18" stroke="var(--ink)" strokeWidth="2.5" strokeLinecap="round" fill="none" opacity="0.35" />
-    </svg>
-  );
-}
-
 export function TwoHeadsIcon({ className }) {
   return (
     <svg className={className} viewBox="0 0 220 140" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -22,7 +9,7 @@ export function TwoHeadsIcon({ className }) {
       />
       <path
         d="M160 30c16 0 30 14 30 32 0 12-6 22-15 28l3 18c-14 4-30 2-40-8-12 2-24-4-28-16-8-2-14-10-14-19 0-16 14-30 32-30 8 0 15 3 20 8 3-8 7-13 12-13z"
-        fill="var(--mustard)"
+        fill="var(--peach)"
         opacity="0.9"
       />
     </svg>
@@ -37,7 +24,7 @@ export function HandLeafIcon({ className }) {
         fill="var(--sage)"
       />
       <path d="M100 30c4 26 4 52-6 76" stroke="var(--ink)" strokeWidth="3" strokeLinecap="round" opacity="0.4" />
-      <circle cx="100" cy="26" r="10" fill="var(--mustard)" />
+      <circle cx="100" cy="26" r="10" fill="var(--ember)" />
     </svg>
   );
 }
@@ -60,7 +47,17 @@ export function WaveDivider({ flip, fill = 'var(--cream)' }) {
 export function SunIcon({ className }) {
   return (
     <svg className={className} viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <circle cx="50" cy="50" r="22" fill="var(--mustard)" />
+      <circle cx="50" cy="50" r="22" fill="var(--ember)" />
+    </svg>
+  );
+}
+
+export function InstagramIcon({ className }) {
+  return (
+    <svg className={className} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="12" cy="12" r="4.2" stroke="currentColor" strokeWidth="1.8" />
+      <circle cx="17.2" cy="6.8" r="1.1" fill="currentColor" />
     </svg>
   );
 }
@@ -69,7 +66,7 @@ export function LotusIcon({ className }) {
   return (
     <svg className={className} viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M60 90C30 90 10 70 10 50c14 6 24 18 28 32 2-16-2-32-14-44 16 2 28 14 32 30 4-16 16-28 32-30-12 12-16 28-14 44 4-14 14-26 28-32 0 20-20 40-42 40z" fill="var(--sage)" />
-      <circle cx="60" cy="86" r="6" fill="var(--mustard)" />
+      <circle cx="60" cy="86" r="6" fill="var(--ember)" />
     </svg>
   );
 }

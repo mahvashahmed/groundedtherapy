@@ -16,13 +16,9 @@
   margin-bottom: 12px;
 }
 
-.footer .logo-text {
-  color: var(--white);
-}
-
-.footer .logo-text em {
-  color: var(--mustard);
-  font-style: italic;
+.footer .logo-image {
+  height: 82px;
+  width: auto;
 }
 
 .footer-names {
@@ -34,6 +30,30 @@
   margin-top: 8px;
   color: var(--cream-dark);
   font-size: 0.9rem;
+}
+
+.footer-social {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  margin-top: 18px;
+  border-radius: 50%;
+  border: 1.5px solid var(--cream-dark);
+  color: var(--cream);
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.footer-social:hover {
+  background: var(--ember);
+  border-color: var(--ember);
+  color: var(--ink);
+}
+
+.footer-social-icon {
+  width: 18px;
+  height: 18px;
 }
 
 .footer-copy {

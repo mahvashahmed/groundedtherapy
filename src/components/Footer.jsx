@@ -1,4 +1,5 @@
 import { contact } from '../content';
+import { InstagramIcon } from './Icons';
 import './Footer.css';
 
 export default function Footer() {
@@ -6,16 +7,22 @@ export default function Footer() {
     <footer className="footer">
       <div className="section footer-inner">
         <div className="footer-brand">
-          <span className="logo-mark" aria-hidden="true" />
-          <span className="logo-text">
-            Grounded <em>Therapy</em>
-          </span>
+          <img className="logo-image" src="/logo.png" alt="Between the Sessions" />
         </div>
         <p className="footer-names">Khushhal Ahmed &amp; Mahvash Ahmed</p>
         <p className="footer-contact">
           {contact.email} · {contact.phone}
         </p>
-        <p className="footer-copy">© {new Date().getFullYear()} Grounded Therapy. All rights reserved.</p>
+        <a
+          href={contact.instagram}
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Follow us on Instagram"
+          className="footer-social"
+        >
+          <InstagramIcon className="footer-social-icon" />
+        </a>
+        <p className="footer-copy">© {new Date().getFullYear()} Between the Sessions. All rights reserved.</p>
       </div>
     </footer>
   );

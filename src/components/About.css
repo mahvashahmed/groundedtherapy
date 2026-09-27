@@ -36,14 +36,10 @@
   background: var(--cream-dark);
 }
 
-.therapist-card.reverse .therapist-photo {
-  order: 2;
-}
-
 .therapist-photo {
   aspect-ratio: 1 / 1;
   border-radius: var(--radius-md);
-  background: linear-gradient(150deg, var(--mustard), var(--sage));
+  background: linear-gradient(150deg, var(--peach), var(--sage));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,6 +117,10 @@
   color: var(--ink);
 }
 
+.therapist-book-btn {
+  margin-top: 28px;
+}
+
 .therapist-details .placeholder-note {
   display: block;
   margin-top: 18px;
@@ -131,10 +131,6 @@
   .therapist-card.reverse {
     grid-template-columns: 1fr;
     padding: 28px;
-  }
-
-  .therapist-card.reverse .therapist-photo {
-    order: 0;
   }
 
   .therapist-photo {

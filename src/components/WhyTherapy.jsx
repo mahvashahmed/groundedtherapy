@@ -1,4 +1,4 @@
-import { whyTherapy } from '../content';
+import { whyTherapy, helpTopics } from '../content';
 import { LotusIcon } from './Icons';
 import './WhyTherapy.css';
 
@@ -8,10 +8,10 @@ export default function WhyTherapy() {
       <div className="section">
         <div className="why-heading">
           <p className="eyebrow">Why Therapy</p>
-          <h2>Therapy isn't just for crisis moments.</h2>
+          <h2>Therapy isn't only for crisis moments.</h2>
           <p className="why-intro">
-            It's for anyone who wants to understand themselves a little better, carry their
-            struggles a little lighter, and build a life that feels more like their own.
+            It's for anyone who wants to understand themselves a little better, carry what's heavy
+            a little more lightly, and build a life that feels more meaningful.
           </p>
         </div>
 
@@ -23,6 +23,19 @@ export default function WhyTherapy() {
               <p>{item.body}</p>
             </div>
           ))}
+        </div>
+
+        <div className="help-block">
+          <p className="eyebrow">What We Help With</p>
+          <h3>A broad range of concerns.</h3>
+          <p className="help-intro">We work across a broad range of concerns:</p>
+          <div className="help-grid">
+            {helpTopics.map((topic) => (
+              <span className="help-tag" key={topic}>
+                {topic}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
     </section>
