@@ -28,14 +28,30 @@ export const therapists = [
   {
     id: 'khushhal',
     initial: 'K',
+    photo: '/khushhal.jpg',
     name: 'Khushhal Ahmed',
-    bio: 'A gentle, unhurried space where your faith, culture, and story are part of the healing, not set aside.',
+    title: 'Psychotherapist · 2 years of experience',
+    bio: 'Khushhal helps you understand what you’re going through, make sense of your feelings, and find a way forward at your own pace. Your faith, your experiences, and your story are all welcome here.',
+    qualifications: ['PhD Candidate (Department of Psychology, AMU)', 'MA (Clinical Psychology, AMU)'],
+    expertise: ['Trauma', 'Grief', 'Faith-Rooted & Culturally-Sensitive Care', 'Youth & Young Adults', 'Relationships & Couples'],
+    approaches: ['Internal Family Systems (IFS)', 'Narrative Therapy'],
+    languages: ['Urdu', 'Hindi', 'English'],
   },
   {
     id: 'mahvash',
     initial: 'M',
+    photo: null,
     name: 'Mahvash Ahmed',
+    title: 'PLACEHOLDER — e.g. Licensed Therapist & Counsellor',
     bio: 'PLACEHOLDER — one line about who Mahvash is and how they work with clients.',
+    qualifications: [
+      'PLACEHOLDER — degree, university, year',
+      'PLACEHOLDER — license / registration number',
+      'PLACEHOLDER — certification or training',
+    ],
+    expertise: ['Stress & Burnout', 'Grief', 'Trauma-Informed Care', 'Students & Young Adults'],
+    approaches: ['PLACEHOLDER — e.g. modality one', 'PLACEHOLDER — modality two'],
+    languages: ['PLACEHOLDER — language'],
   },
 ];
 

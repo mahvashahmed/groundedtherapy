@@ -7,9 +7,10 @@
 
 .person {
   border-radius: 32px;
-  padding: 40px;
+  padding: 28px;
   background: #f3e2b3;
   color: #241a1a;
+  cursor: pointer;
   transition: transform 0.3s;
 }
 
@@ -22,29 +23,110 @@
   transform: rotate(1.2deg);
 }
 
-.person:hover {
+.person:hover,
+.person.open {
   transform: rotate(0);
 }
 
-.avatar {
-  width: 96px;
-  height: 96px;
-  border-radius: 50%;
+.person-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+  align-items: center;
+}
+
+.person-photo {
+  aspect-ratio: 1;
+  width: 100%;
+  border-radius: 24px;
   border: 1px solid var(--forest);
+  overflow: hidden;
   display: grid;
   place-items: center;
-  font: italic 300 40px Fraunces, serif;
+  background: rgba(31, 69, 53, 0.08);
+}
+
+.person-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.person-photo-fallback {
+  font: italic 300 56px Fraunces, serif;
   color: var(--forest);
-  margin-bottom: 28px;
 }
 
-.person h3 {
-  font-size: 30px;
+.person-info h3 {
+  font-size: 28px;
 }
 
-.person p {
+.person-info p {
   margin: 12px 0 0;
   color: #5a4646;
+}
+
+.person-toggle {
+  display: inline-block;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--forest);
+}
+
+.person-more {
+  margin-top: 28px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(36, 26, 26, 0.18);
+}
+
+.person-title {
+  font-style: italic;
+  color: #5a4646;
+  margin: 0 0 20px;
+}
+
+.person-block {
+  margin-top: 18px;
+}
+
+.person-block:first-of-type {
+  margin-top: 0;
+}
+
+.person-block h4 {
+  font-family: Figtree, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #5a4646;
+  margin: 0 0 10px;
+}
+
+.person-block ul {
+  margin: 0;
+  padding-left: 20px;
+  color: #5a4646;
+}
+
+.person-block li {
+  margin-bottom: 4px;
+}
+
+.person-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.person-tag {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 999px;
+  padding: 6px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #241a1a;
 }
 
 @media (max-width: 860px) {
@@ -53,6 +135,12 @@
   }
 
   .person {
-    padding: 30px;
+    padding: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .person-top {
+    grid-template-columns: 1fr;
   }
 }
