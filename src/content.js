@@ -2,96 +2,72 @@
 // real details whenever you're ready. Search this file for "PLACEHOLDER" to
 // find every spot that needs a real answer.
 
+export const heroBubbles = [
+  { id: 'b1', question: "What if I'm too much?", answer: 'Not true. You are allowed to take up space.' },
+  { id: 'b2', question: 'Why am I so tired?', answer: 'Tired is a signal, not a flaw.' },
+  { id: 'b3', question: 'I keep replaying it', answer: 'Thoughts are weather. You are the sky.' },
+  { id: 'b4', question: 'Is it bad enough?', answer: "You don't need a crisis to deserve support." },
+];
+
+export const whySwaps = [
+  {
+    in: '"I should be able to handle this alone."',
+    out: "You don't have to. Having help is not weakness.",
+  },
+  {
+    in: "\"My mind won't switch off.\"",
+    out: 'We give you simple tools to slow it down.',
+  },
+  {
+    in: "\"I don't know where to start.\"",
+    out: 'Start with a short form. We take it from there.',
+  },
+];
+
 export const therapists = [
   {
     id: 'khushhal',
+    initial: 'K',
     name: 'Khushhal Ahmed',
-    title: 'Psychotherapist',
-    photoInitial: 'K',
-    tagline:
-      'I offer a gentle, unhurried space where your faith, culture, and story are part of the healing, not set aside.',
-    bio: '',
-    qualifications: ['PhD Candidate (Department of Psychology, AMU)', 'MA (Clinical Psychology, AMU)'],
-    expertise: ['Trauma', 'Grief', 'Faith-Rooted & Culturally-Sensitive Care', 'Youth & Young Adults', 'Relationships & Couples'],
-    approaches: ['Internal Family Systems (IFS)', 'Narrative Therapy'],
-    languages: ['Urdu', 'Hindi', 'English'],
-    placeholder: false,
+    bio: 'A gentle, unhurried space where your faith, culture, and story are part of the healing, not set aside.',
   },
   {
     id: 'mahvash',
+    initial: 'M',
     name: 'Mahvash Ahmed',
-    title: 'PLACEHOLDER — e.g. Licensed Therapist & Counsellor',
-    photoInitial: 'M',
-    tagline: 'PLACEHOLDER — one line describing how Mahvash works with clients.',
-    bio: 'PLACEHOLDER bio. Write 2-4 sentences about who Mahvash is, how they came to therapy work, and what clients can expect from sessions with them.',
-    qualifications: [
-      'PLACEHOLDER — degree, university, year',
-      'PLACEHOLDER — license / registration number',
-      'PLACEHOLDER — certification or training',
-    ],
-    expertise: ['Stress & Burnout', 'Grief', 'Trauma-Informed Care', 'Students & Young Adults'],
-    approaches: ['PLACEHOLDER — e.g. modality one', 'PLACEHOLDER — modality two'],
-    languages: ['PLACEHOLDER — language'],
-    placeholder: true,
+    bio: 'PLACEHOLDER — one line about who Mahvash is and how they work with clients.',
   },
 ];
 
-export const therapyStyle = {
-  shared:
-    'We share a warm, collaborative, trauma-informed way of working, and each of us brings our own approach to it.',
-  khushhal:
-    "Khushhal draws on Internal Family Systems (IFS) and Narrative Therapy. In practice, that means getting to know the different parts of you, including the ones in pain or on guard, with curiosity rather than judgement, and gently loosening the grip of the stories that hardship writes about us. His work is trauma-informed and spiritually grounded: your faith and culture aren't set aside; they're part of how you heal.",
-  mahvash: '',
-};
-
-export const whyTherapy = [
+export const howSteps = [
   {
-    title: 'An unhurried space',
-    body: "Time that is fully yours: private, without rush, room to say what's hard to say.",
+    title: 'Share your interest',
+    body: 'Fill in a short form. Tell us what you want help with.',
   },
   {
-    title: 'Sense, and a way forward',
-    body: "We help you understand what's happening, and find ways through that hold up outside the room.",
+    title: 'We read your form',
+    body: 'We look at what you shared and see how we can help.',
   },
   {
-    title: 'Alongside you',
-    body: 'No formulas, no fixing. We stay beside you through the hard parts and the small wins alike.',
+    title: 'We send the fee and consent form',
+    body: 'You get our fee details and a consent form. Read them, sign, and pay to confirm your first session.',
   },
   {
-    title: 'Shaped around you',
-    body: 'Therapy that moves at your pace and respects your values, your culture, and what matters most to you.',
-  },
-];
-
-export const helpTopics = [
-  'Anxiety',
-  'Stress & Burnout',
-  'Grief & Loss',
-  'Trauma',
-  'Relationships & Couples',
-  'Life Transitions',
-  'Youth & Young Adults',
-  'Self-Esteem',
-];
-
-export const approachSteps = [
-  {
-    title: 'Reach out',
-    body: "Send a short message telling us a little about what's bringing you to therapy.",
+    title: 'Your sessions',
+    body: 'Regular time with one of us, at a pace that feels right to you.',
   },
   {
-    title: 'A free first call',
-    body: "A relaxed, no-pressure intro call to see if we're the right fit for each other.",
+    title: 'Between the sessions',
+    body: "Small things to try in real life, so the work doesn't stay in the room.",
+    gap: true,
   },
   {
-    title: 'Begin sessions',
-    body: 'Regular sessions, online, built around your goals and your pace.',
+    title: 'Back to your life',
+    body: 'The goal is simple: you need us less over time.',
   },
 ];
 
 export const contact = {
-  email: 'PLACEHOLDER — hello@betweenthesessions.com',
-  phone: 'PLACEHOLDER — +91 00000 00000',
-  location: 'PLACEHOLDER — City, Country / Online worldwide',
-  instagram: 'https://www.instagram.com/betweenthesessions',
+  shareFormUrl: 'PLACEHOLDER — https://forms.gle/your-form-id',
+  say: "Tell us what's on your mind.",
 };

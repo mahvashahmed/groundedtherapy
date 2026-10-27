@@ -1,40 +1,20 @@
-import { useState } from 'react';
 import './Header.css';
 
-const links = [
-  { href: '#/therapists', label: 'Meet the Therapists' },
-  { href: '#why-therapy', label: 'Why Therapy' },
-  { href: '#approach', label: 'How We Work' },
-  { href: '#contact', label: 'Contact' },
-];
-
 export default function Header() {
-  const [open, setOpen] = useState(false);
-
   return (
-    <header className="header">
-      <div className="header-inner">
-        <a href="#top" className="logo" onClick={() => setOpen(false)}>
-          <img className="logo-image" src="/logo.png" alt="Between the Sessions" />
+    <header>
+      <div className="wrap">
+        <a className="logo" href="#top" aria-label="Between the Sessions, home">
+          <img alt="Between the Sessions" src="/logo.png" />
         </a>
-
-        <nav className={`nav ${open ? 'nav-open' : ''}`}>
-          {links.map((link) => (
-            <a key={link.href} href={link.href} onClick={() => setOpen(false)}>
-              {link.label}
-            </a>
-          ))}
+        <nav>
+          <a href="#why">Why therapy</a>
+          <a href="#people">Meet the therapists</a>
+          <a href="#how">How we work</a>
+          <a className="pill" href="#contact">
+            Share your interest
+          </a>
         </nav>
-
-        <button
-          className="menu-toggle"
-          aria-label="Toggle menu"
-          onClick={() => setOpen((o) => !o)}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
       </div>
     </header>
   );

@@ -1,113 +1,56 @@
-.approach {
-  display: grid;
-  grid-template-columns: 1fr 1.3fr 1fr;
-  gap: 24px;
-  align-items: stretch;
+.path {
+  margin-top: 56px;
+  max-width: 700px;
+  border-left: 1px solid var(--forest);
+  padding-left: 40px;
 }
 
-.approach-panel {
-  border-radius: var(--radius-lg);
-  padding: 36px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 14px;
+.step {
+  position: relative;
+  padding-bottom: 38px;
 }
 
-.approach-panel-sage {
-  background: var(--sage-light);
+.step:last-child {
+  padding-bottom: 0;
 }
 
-.approach-panel-ember {
-  background: var(--ember);
-  color: var(--ink);
+.step::before {
+  content: '';
+  position: absolute;
+  left: -46px;
+  top: 11px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: var(--bg);
+  border: 1px solid var(--forest);
 }
 
-.approach-icon {
-  width: 56px;
-  height: 56px;
+.step h3 {
+  font-size: 25px;
 }
 
-.approach-icon-wide {
-  width: 84px;
-  height: auto;
+.step p {
+  margin: 6px 0 0;
+  color: var(--muted);
 }
 
-.approach-panel h3 {
-  font-size: 1.3rem;
+.step.gap::before {
+  background: var(--tomato);
+  border-color: var(--tomato);
+  box-shadow: 0 0 0 6px rgba(232, 87, 42, 0.18);
 }
 
-.approach-panel p {
-  color: var(--ink-soft);
-  line-height: 1.6;
-  flex-grow: 1;
+.step.gap h3 {
+  font-style: italic;
 }
 
-.approach-panel-sage p {
-  flex-grow: 0;
-}
+@media (prefers-color-scheme: dark) {
+  .path {
+    border-color: #9ad3ae;
+  }
 
-.approach-panel-ember p {
-  color: var(--ink);
-}
-
-.therapist-style {
-  margin-top: 4px;
-}
-
-.therapist-style h4 {
-  font-family: var(--font-body);
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--sage-dark);
-  margin-bottom: 6px;
-}
-
-.approach-steps {
-  padding: 12px 8px;
-}
-
-.approach-steps h2 {
-  font-size: 2rem;
-  margin-top: 6px;
-  margin-bottom: 32px;
-}
-
-.approach-steps ol {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 26px;
-}
-
-.approach-steps li {
-  display: flex;
-  gap: 18px;
-}
-
-.step-index {
-  font-family: var(--font-display);
-  font-size: 1.6rem;
-  color: var(--peach-dark);
-  flex-shrink: 0;
-}
-
-.approach-steps h4 {
-  font-size: 1.05rem;
-  margin-bottom: 4px;
-}
-
-.approach-steps p {
-  color: var(--ink-soft);
-  line-height: 1.6;
-}
-
-@media (max-width: 940px) {
-  .approach {
-    grid-template-columns: 1fr;
+  .step::before {
+    border-color: #9ad3ae;
   }
 }
